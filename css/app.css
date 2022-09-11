@@ -73,6 +73,43 @@ select {
   }
 }
 
+/* Sarah's CSS */
+
 body {
-  color: #000080;
+  background-color: rgb(187, 166, 126);
+  font-family: 'Nanum Myeongjo', serif;
+  color: #263117;
+  padding: 1rem;
+}
+
+h1 {
+  /*font-size: clamp(1.2rem, calc(1rem + 5vw), 10rem);*/
+  font-size: min(calc(1rem + 5vw), 70px);
+}
+h2 {
+  font-size: min(calc(1rem + 1vw), 50px);
+  display: flex;
+  justify-content: flex-end;
+}
+
+img {
+  width: 85vw;
+  margin: auto;
+  max-width: 800px;
+}
+
+.poem {
+  font-size: clamp(4vw, 2vw, 3vw);
+  margin: auto;
+  max-width: fit-content;
+  padding: 10px;
+}
+
+footer {
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8em;
+  color: #746448;
+  max-width: fit-content;
+  margin: auto;
 }
