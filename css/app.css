@@ -84,7 +84,7 @@ body {
 
 h1 {
   /*font-size: clamp(1.2rem, calc(1rem + 5vw), 10rem);*/
-  font-size: min(calc(1rem + 5vw), 70px);
+  font-size: min(calc(1rem + 5vw), 3.7em);
 }
 h2 {
   font-size: min(calc(1rem + 1vw), 50px);
@@ -95,11 +95,11 @@ h2 {
 img {
   width: 85vw;
   margin: auto;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .poem {
-  font-size: clamp(4vw, 2vw, 3vw);
+  font-size: clamp(1rem, 4vw, 1.8rem);
   margin: auto;
   max-width: fit-content;
   padding: 10px;
@@ -112,4 +112,29 @@ footer {
   color: #746448;
   max-width: fit-content;
   margin: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 800px;
+    padding-top: 20px;
+  }
+
+  .header-title {
+    grid-column-start: 1;
+    padding: 10px 30px;
+    width: 300px;
+  }
+
+  img {
+    grid-column-start: 2;
+    margin: none;
+  }
+
+  /*grid for (h1 h2) and img/*
+
+  /*2 columns*/
 }
